@@ -1,0 +1,16 @@
+name: Evidence correction
+description: Correct a scientific claim, citation, alternative, or licensing observation.
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Proposal and document
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and primary evidence
+      description: Explain what should change and link an authoritative source.
+    validations:
+      required: true

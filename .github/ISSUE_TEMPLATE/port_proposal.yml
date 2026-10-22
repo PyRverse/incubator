@@ -1,0 +1,39 @@
+name: Method proposal
+description: Propose a scientific method for evaluation.
+title: "Proposal: "
+body:
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream method and documentation
+      description: Include the exact name, primary URL, and version if known.
+    validations:
+      required: true
+  - type: textarea
+    id: scientific_scope
+    attributes:
+      label: Scientific use case and proposed scope
+      description: What question, data, and minimum feature set would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing Python implementations and alternatives
+      description: Link the projects you checked, their overlap, and any uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: licensing
+    attributes:
+      label: Upstream attribution and licensing evidence
+      description: Link package metadata, license files, and method citations. Unknowns are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and contribution ideas
+      description: Suggest reference outputs, edge cases, lawful datasets, and a small next step.
+    validations:
+      required: true
