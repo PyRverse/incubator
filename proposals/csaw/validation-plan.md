@@ -1,6 +1,6 @@
 # Validation plan: csaw
 
-Status: **planned**. No csaw reference outputs or timing results have been produced here.
+Status: **Synthetic R checks available in the research alpha.** See [csawpy's validation evidence](https://github.com/PyRverse/csawpy/blob/main/docs/validation.md). Current tests cover the specified legacy nonrobust QL workflow without an abundance trend; the broader plan below includes remaining work. No timing claim is made.
 
 Validate each stage independently before a whole-workflow comparison:
 

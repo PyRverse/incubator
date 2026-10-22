@@ -1,6 +1,6 @@
 # Validation plan: DEXSeq
 
-Status: **planned**. No DEXSeq reference run has been performed for this repository.
+Status: **Synthetic R checks available in the research alpha.** See [Exonara's validation evidence](https://github.com/PyRverse/exonara/blob/main/docs/validation.md). Current coverage is two-condition inference with `fitType="mean"`; the broader plan below includes remaining work beyond that subset.
 
 Use the [official vignette](https://bioconductor.org/packages/release/bioc/vignettes/DEXSeq/inst/doc/DEXSeq.html) to define an explicit versioned analysis; do not mix historical Python-counting defaults with a newer R preprocessing workflow without checking semantics.
 
@@ -15,4 +15,4 @@ Begin with hand-checkable synthetic genes having two or three exon bins, balance
 
 The **pasilla** example in the vignette is a biological validation candidate. Review its data terms before redistribution, and store exact annotation and count provenance. Keep a small permitted subset for CI; preserve a script for a fuller optional run.
 
-Pin R, DEXSeq, DESeq2 and dependencies, and retain scripts, session metadata, input hashes, options, warnings and failures. Specify separate tolerance budgets for likelihoods, dispersions and probabilities after inspecting numerical scale. Include p-values near zero and around a prespecified decision threshold. Evaluate null calibration and power on simulations in addition to agreement with one reference dataset. No tolerance is approved yet.
+Pin R, DEXSeq, DESeq2 and dependencies, and retain scripts, session metadata, input hashes, options, warnings and failures. Specify separate tolerance budgets for likelihoods, dispersions and probabilities after inspecting numerical scale. Include p-values near zero and around a prespecified decision threshold. Evaluate null calibration and power on simulations in addition to agreement with one reference dataset. Exonara records tolerances for its existing fixtures; extensions require separate justification.

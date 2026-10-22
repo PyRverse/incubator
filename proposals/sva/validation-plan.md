@@ -1,6 +1,6 @@
 # Validation plan: sva
 
-Status: **planned**. No sva benchmarks or reference outputs have been generated here.
+Status: **Synthetic R checks available in the research alpha.** See [Surva's validation evidence](https://github.com/PyRverse/surva/blob/main/docs/validation.md). The broader plan below includes remaining work beyond the implemented IRW, supervised SVA, svaseq, and Buja–Eyuboglu subset. ComBat is not implemented by Surva.
 
 1. Pin the reference R/sva environment and record the exact estimator, full/null design, requested dimension, options, seed, feature filtering, and matrix orientation. Export session information, data hashes, warnings, and failure states.
 2. Begin with synthetic matrices containing known covariates and latent factors. Include no unwanted variation, correlated biological and batch effects, constant features, duplicated covariates, small batches, and nonfinite inputs. Distinguish invalid-input behavior from valid numerical results.

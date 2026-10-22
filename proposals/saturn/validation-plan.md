@@ -1,6 +1,6 @@
 # Validation plan: satuRn
 
-Status: **planned**. No satuRn reference outputs have been generated in this repository.
+Status: **Synthetic R checks available in the research alpha.** See [Saturna's provenance](https://github.com/PyRverse/saturna/blob/main/docs/provenance.md) and [numerical report](https://github.com/PyRverse/saturna/blob/main/reports/validated/parity.md). Current coverage is independent bulk DTU, including empirical-null correction; the broader plan below includes remaining work and does not establish single-cell support.
 
 Use the small **Tasic** count and metadata objects documented in the [official vignette](https://bioconductor.org/packages/release/bioc/vignettes/satuRn/inst/doc/Vignette.html) as a candidate biological fixture. Check data and annotation terms before redistribution. Pin the transcript-to-gene mapping, retained transcript set, design, contrasts and reference version; the vignette contains historical version references, so record the environment actually executed.
 

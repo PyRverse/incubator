@@ -6,18 +6,18 @@ Explore, evaluate, and incubate native Python implementations of established sci
 
 This is the entry point for method proposals. We investigate scientific value, existing implementations, licensing, and validation before committing to a new package. Contributing benchmarks or improvements to an existing Python project can be the best outcome.
 
-## Initial candidates
+## Research alpha implementations
 
-All four candidates are **research proposals**. No implementation, numerical parity, release, or upstream endorsement is claimed.
+Four bounded **0.1.0a1 research alpha implementations** are available. Each includes genuine R-generated synthetic reference checks. These checks do not establish general scientific equivalence, production readiness, or upstream endorsement.
 
-| Proposal | Scientific question | Initial direction |
+| Proposal | Implementation | Tested scope |
 | --- | --- | --- |
-| [sva](proposals/sva/) | How can unwanted variation be modeled or adjusted? | Audit surrogate-variable coverage; benchmark existing ComBat implementations. |
-| [DEXSeq](proposals/dexseq/) | Does relative exon usage change between conditions? | Scope the exon-usage inference layer, accounting for existing Python preprocessing and DESeq2 implementations. |
-| [csaw](proposals/csaw/) | Which genomic regions show differential ChIP-seq binding? | Evaluate window counting, statistical dependencies, and region-level error control separately. |
-| [satuRn](proposals/saturn/) | Does transcript usage within a gene change between groups? | Evaluate quasi-binomial fitting and empirical-null calibration against existing DTU methods. |
+| [sva](proposals/sva/) | [surva](https://github.com/PyRverse/surva) | Iterative reweighted and supervised SVA, svaseq, and Buja–Eyuboglu dimension estimation; no ComBat |
+| [DEXSeq](proposals/dexseq/) | [exonara](https://github.com/PyRverse/exonara) | Two-condition exon-usage inference with `fitType="mean"` |
+| [csaw](proposals/csaw/) | [csawpy](https://github.com/PyRverse/csawpy) | Window counts, normalization, legacy nonrobust QL tests without an abundance trend, and region aggregation |
+| [satuRn](proposals/saturn/) | [saturna](https://github.com/PyRverse/saturna) | Independent bulk DTU fitting, moderation, and empirical-null correction |
 
-The `saturn` directory is a URL-friendly slug. The upstream package is spelled **satuRn**.
+The proposal records retain the initial alternatives reviews and broader validation plans; the implementation documents define current coverage. The `saturn` directory is a URL-friendly slug. The upstream package is spelled **satuRn**.
 
 ## Propose a method
 
