@@ -26,7 +26,7 @@ The `saturn` directory is a URL-friendly slug. The upstream package is spelled *
 3. Copy [the proposal template](templates/proposal/) into `proposals/<slug>/` and complete its four documents.
 4. Review the evidence with maintainers and domain reviewers. Record unresolved questions rather than filling gaps with claims.
 
-Statisticians, researchers, original package authors, Python developers, and documentation contributors are welcome. Useful first contributions include verifying one alternative's feature coverage, defining one edge-case fixture, or improving a source citation.
+Statisticians, researchers, original package authors, Python developers, and documentation contributors are welcome. Use [Discussions](https://github.com/PyRverse/incubator/discussions) for ideas and questions, and issues for concrete proposals or evidence corrections. Useful first contributions include verifying one alternative's feature coverage, defining one edge-case fixture, or improving a source citation.
 
 ## From proposal to package
 
